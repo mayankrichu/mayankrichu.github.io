@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
 
 ## Intro
 
@@ -36,11 +34,14 @@ I have done my Bachelors in Computer Science and Engineering from Galgotias Univ
 
 | Area                                | Excellent knowledge                                             | Average Knowledge                | 
 |:------------------------------------|:----------------------------------------------------------------|----------------------------------|
-| DevOps                              | GitHub Actions, Docker                                          | Kubernetes                       |
-| Language (Programming and Querying) | Python, SQL, SPARQL, Neo4J                                      | Java, C                          |
+| CI/CD   Tool                        | GitHub Actions, Docker                                          | Kubernetes                       |
+| Language (Programming and Querying) | Python, SQL, SPARQL, Cypher Query                               | Java, C                          |
+| Database Tools                      | SQLite, Neo4j, MongoDB, DynamoDB                                |                                  |
 | Frontened Development               | HTML                                                            | JavaScript, CSS                  |
 | Visualization Tool/Packages         | matplotlib, PowerBI                                             | Tableau                          |
 | Python Packages                     | Pandas, numpy, matplotlib, Owlready2, Regular Expression, Flask | Pytorch, scipy, sklearn, Pyspark |
+| Cloud Platform Technologies         | Azure app services, Azure Synapse Analytics, S3                 | Lambda, Google App engine        |
+| Scheduling Tool                     | Unix CRUD operation, Apache Airflow                             |                                  |
 
 
 

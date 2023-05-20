@@ -20,7 +20,7 @@ timezone: Europe/Berlin
 
 title: Mayank Singh Blog # the main title
 
-tagline: A tech journal  # it will display as the sub-title
+tagline: Mostly tech but personal journal as well # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Blog for machine learning, Knowledge graphs, python technologies, Visualization, Data Engineering.
