@@ -19,7 +19,7 @@ I am currently, studying Master's in Web Science from University of Koblenz and 
 I have worked for around two years from May 2021 to March 2023 as Research Assistant at Fraunhofer IGCV Augsburg. Here I worked on many
 interesting and different types of projects which range from Ontology development, IOT data handling, neural networks, Natural Language Processing, Prototype application development.
 and lot of other amazing things which I learned. While working at Fraunhofer I got an amazing opportunity to collaborate to the conference paper whose topic is [**Ontology based syncrhonization of the automated production systems
-and their simulation models.**](10.1109/IEEM55944.2022.9989593). I worked with amazing mentors and supervisors throughout my journey at Fraunhofer.
+and their simulation models.**](https://ieeexplore.ieee.org/document/9989593). I worked with amazing mentors and supervisors throughout my journey at Fraunhofer.
 
 Before starting at Fraunhofer, I worked as a Data Engineer Intern at Rokin Tech. Here I got an extensive experience in building data pipeline and collaborating with team members from different data related roles( Data Scientist, Machine Learning Engineer, Frontend Developer)
 
