@@ -8,7 +8,7 @@ order: 4
 ## Intro
 
 Servus everyone, I am Mayank Singh, this Blog is an attempt to improve my writing skills, documenting the work and challenges 
-which I face on day to day basis. Also, there will be other interesting stuffs related to computer world. I hope it will help me for better understanding and will be like
+which I face on day to day basis. Also, there will be other interesting stuffs related to computer science world. I hope it will help me for better understanding and will be like
 a historical journey for me if I look back to it many years from now. 
 
 #### Educational and Working Experience
@@ -32,16 +32,16 @@ I have done my Bachelors in Computer Science and Engineering from Galgotias Univ
 #### Tables
 
 
-| Area                                | Excellent knowledge                                             | Average Knowledge                | 
-|:------------------------------------|:----------------------------------------------------------------|----------------------------------|
-| CI/CD   Tool                        | GitHub Actions, Docker                                          | Kubernetes                       |
-| Language (Programming and Querying) | Python, SQL, SPARQL, Cypher Query                               | Java, C                          |
-| Database Tools                      | SQLite, Neo4j, MongoDB, DynamoDB                                |                                  |
-| Frontened Development               | HTML                                                            | JavaScript, CSS                  |
-| Visualization Tool/Packages         | matplotlib, PowerBI                                             | Tableau                          |
-| Python Packages                     | Pandas, numpy, matplotlib, Owlready2, Regular Expression, Flask | Pytorch, scipy, sklearn, Pyspark |
-| Cloud Platform Technologies         | Azure app services, Azure Synapse Analytics, S3                 | Lambda, Google App engine        |
-| Scheduling Tool                     | Unix CRUD operation, Apache Airflow                             |                                  |
+| Area                                | Excellent knowledge                                                   | Average Knowledge                | 
+|:------------------------------------|:----------------------------------------------------------------------|----------------------------------|
+| CI/CD   Tool                        | GitHub Actions, Docker                                                | Kubernetes                       |
+| Language (Programming and Querying) | Python, SQL, SPARQL, Cypher Query                                     | Java, C                          |
+| Tools                               | SQLite, Neo4j, MongoDB, DynamoDB, Pycharm, Jupyter notebook, Overleaf |                                  |
+| Frontened Development               | HTML                                                                  | JavaScript, CSS                  |
+| Visualization Tool/Packages         | matplotlib, PowerBI                                                   | Tableau                          |
+| Python Packages                     | Pandas, numpy, matplotlib, Owlready2, Regular Expression, Flask       | Pytorch, scipy, sklearn, Pyspark |
+| Cloud Platform Technologies         | Azure app services, Azure Synapse Analytics, S3                       | Lambda, Google App engine        |
+| Scheduling Tool                     | Unix CRUD operation, Apache Airflow                                   |                                  |
 
 
 
