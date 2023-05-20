@@ -31,4 +31,19 @@ E-A-E
 | sehen     | sah        |   gesehen | to see          |
 | treten    | trat       |  getreten | to die          | 
 
+I-A-E
 
+| Infinitiv | Pråteritum |  Perfekt | English Meaning |
+|:----------|:-----------|---------:|-----------------|
+| sitzen    | saß        | gesessen | to sit          |
+| liegen    | lag        |  gelegen | to lie          |
+
+A-U-A
+
+| Infinitiv | Pråteritum |   Perfekt | English Meaning  |
+|:----------|:-----------|----------:|------------------|
+| fahren    | fuhr       |  gefahren | to ride          |
+| laden     | lud        |   geladen | to download      |
+| schalagen | schlug     | geshlagen | to beat / to hit |
+| tragen    | trug       |  getragen | to wear          |
+| waschen   | wusch      | gewaschen | to wash          | 
