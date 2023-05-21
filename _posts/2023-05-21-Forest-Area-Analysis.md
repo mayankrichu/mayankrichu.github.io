@@ -11,8 +11,19 @@ render_with_liquid: false
 
 #### Analysis of Forest Area in India
 
-This is a project developed for self learning and exploring the status of the area of forest over the years. 
+As we all know, we are currently facing a dire situation where our planet is facing more natural calamity. This is mainly 
+due to the exponential increase in the green house gases in the atmosphere which promotes global warming. Also, everyday large area
+of the forests are being cut for various different reasons.Thus the final result is more draughts, floods, unexpected seasonal changes.
 
-##### Source of data - https://www.kaggle.com/datasets/arjunprasadsarkhel/forest-cover-in-india
+Therefore, this project aims to uncover the changes in the forest areas over the years in different Indian States.
+
+##### Resources Used - 
+
+
+| Data Source | Tools Used                           |
+|:------------|:-------------------------------------|
+| https://www.kaggle.com/datasets/arjunprasadsarkhel/forest-cover-in-india      | Pandas, Matplotlib, Geopandas, flask |
+
+
 
 
