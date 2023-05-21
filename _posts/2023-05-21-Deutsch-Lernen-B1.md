@@ -53,7 +53,8 @@ A-I-A
 
 
 
-> Here is the idea. {: .prompt-tip }
+> An example showing the `tip` type prompt.
+{: .prompt-tip }
 
 The regular verbs have a predictable pattern and irregular doesn't have any specific pattern. Though some group of irregular verbs can have similar pattern just like above mentioned
 example.
