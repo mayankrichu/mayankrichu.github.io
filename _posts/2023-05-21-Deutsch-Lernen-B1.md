@@ -51,7 +51,9 @@ A-I-A
 
 #### What is the difference between regular verbs and irregular verbs?
 
-Here is the idea
+
+
+> Here is the idea `tip`. {: .prompt-tip }
 
 The regular verbs have a predictable pattern and irregular doesn't have any specific pattern. Though some group of irregular verbs can have similar pattern just like above mentioned
 example.
