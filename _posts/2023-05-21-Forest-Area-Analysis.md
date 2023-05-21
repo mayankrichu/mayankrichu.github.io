@@ -17,12 +17,40 @@ of the forests are being cut for various different reasons.Thus the final result
 
 Therefore, this project aims to uncover the changes in the forest areas over the years in different Indian States.
 
-##### Resources Used - 
+#### Resources Used - 
 
 
-| Data Source | Tools Used                           |
-|:------------|:-------------------------------------|
-| https://www.kaggle.com/datasets/arjunprasadsarkhel/forest-cover-in-india      | Pandas, Matplotlib, Geopandas, flask |
+| Data Source | Technology Stack                                                 |
+|:------------|:-----------------------------------------------------------------|
+| https://www.kaggle.com/datasets/arjunprasadsarkhel/forest-cover-in-india      | Python, Pandas, Matplotlib, Geopandas, flask, Pycharm, Blueprint |
+
+
+This project can be built on juptyer notebook but I prefer developing projects as a web application.
+
+Lets start with the file structure. First we need to initialize __init__.py file in the folder. __init__.py file is 
+basically a python file which gets executed without needing to call it explicitly. Within the __init__.py file
+we have included the following code. The ForestCover.routes is the python file inside ForestCover folder which consists 
+of a file where we have initialized forest_cover blueprint. Blueprint comes into benefit when we need to add various other features
+within our application. We can call all the blueprints defined in our applications in this __init__.py file. Thus, it becomes 
+quite handy overall.
+
+```bash
+from flask import Flask
+from ForestCover.routes import forest_cover
+
+def create_app():
+    app = Flask(__name__)
+    app.jinja_env.add_extension('jinja2.ext.loopcontrols')
+    app.register_blueprint(forest_cover)
+
+    return app
+```
+
+
+
+
+
+
 
 
 
