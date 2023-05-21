@@ -53,7 +53,7 @@ A-I-A
 
 
 
-> Here is the idea `tip`. {: .prompt-tip }
+> Here is the idea. {: .prompt-tip }
 
 The regular verbs have a predictable pattern and irregular doesn't have any specific pattern. Though some group of irregular verbs can have similar pattern just like above mentioned
 example.
