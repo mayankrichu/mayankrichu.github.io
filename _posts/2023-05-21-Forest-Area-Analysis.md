@@ -27,11 +27,11 @@ Therefore, this project aims to uncover the changes in the forest areas over the
 
 This project can be built on juptyer notebook but I prefer developing projects as a web application.
 
-Lets start with the file structure. First we need to initialize \_\_init\_\_.py file in the folder. \_\_init\_\_.py file is 
-basically a python file which gets executed without needing to call it explicitly. Within the \_\_init\_\_.py file
+Lets start with the file structure. First we need to initialize _ _ init _ _.py file in the folder. _ _ init _ _.py file is 
+basically a python file which gets executed without needing to call it explicitly. Within the _ _ init _ _.py file
 we have included the following code. The ForestCover.routes is the python file inside ForestCover folder which consists 
 of a file where we have initialized forest_cover blueprint. Blueprint comes into benefit when we need to add various other features
-within our application. We can call all the blueprints defined in our applications in this \_\_init\_\_.py file. Thus, it becomes 
+within our application. We can call all the blueprints defined in our applications in this _ _ init _ _.py file. Thus, it becomes 
 quite handy overall.
 
 ```bash
