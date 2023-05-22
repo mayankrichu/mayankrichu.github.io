@@ -1,6 +1,6 @@
 ---
 title: Deutsch Learning Klassen der unregelmåßig Verben II
-author: Mayank Singh (Content Provided by Julia Krist from Udemy)
+author: mayank
 date: 2023-05-20 4:11:00 
 categories: [Blogging, Deutsch Lernen]
 tags: [writing, Deutsch Learning, Rules for Infinitiv Verb]
