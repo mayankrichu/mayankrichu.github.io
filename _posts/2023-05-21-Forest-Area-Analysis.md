@@ -3,7 +3,7 @@ title: Analysing forest area of Indian States
 author: Mayank Singh 
 date: 2023-05-21
 categories: [Blogging, Data Engineering/Data Analysis]
-tags: [writing, Deutsch Learning, Rules for Infinitiv Verb]
+tags: [Forest area, India, Data analysis, Data Manipulation, Geopandas, matplotlib]
 render_with_liquid: false
 ---
 
