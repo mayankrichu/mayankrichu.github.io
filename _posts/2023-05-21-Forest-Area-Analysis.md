@@ -1,4 +1,3 @@
-
 ---
 title: Analysing forest area of Indian States
 author: Mayank Singh 
