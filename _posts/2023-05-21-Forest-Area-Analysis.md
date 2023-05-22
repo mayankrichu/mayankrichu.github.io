@@ -1,6 +1,6 @@
 ---
 title: Analysing forest area of Indian States
-author: Mayank Singh 
+author: mayank singh 
 date: 2023-05-21
 categories: [Blogging, Data Engineering/Data Analysis]
 tags: [Forest area, India, Data analysis, Data Manipulation, Geopandas, matplotlib]
