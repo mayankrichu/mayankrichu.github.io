@@ -8,9 +8,6 @@ render_with_liquid: false
 ---
 
 
-
-#### Analysis of Forest Area in India
-
 As we all know, we are currently facing a dire situation where our planet is facing more natural calamity. This is mainly 
 due to the exponential increase in the green house gases in the atmosphere which promotes global warming. Also, everyday large area
 of the forests are being cut for various different reasons.Thus the final result is more draughts, floods, unexpected seasonal changes.
