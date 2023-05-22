@@ -76,7 +76,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://github.com/mayankrichu/mayankrichu.github.io/tree/master/_posts/2023-05-22"
+img_cdn: "https://avatars.dicebear.com"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/v2/male/d1d6fe0aa6dfcc01debd6fd40c9ded1c.svg"
