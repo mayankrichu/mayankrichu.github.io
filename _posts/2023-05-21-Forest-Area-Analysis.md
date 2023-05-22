@@ -8,11 +8,12 @@ render_with_liquid: false
 ---
 
 
-As we all know, we are currently facing a dire situation where our planet is facing more natural calamity. This is mainly 
-due to the exponential increase in the green house gases in the atmosphere which promotes global warming. Also, everyday large area
-of the forests are being cut for various different reasons.Thus the final result is more draughts, floods, unexpected seasonal changes.
+As we all know, we are currently facing a dire situation where our planet is experiencing an increasing number of natural calamities. 
+This is mainly due to the exponential rise in greenhouse gases in the atmosphere, leading to global warming. 
+Additionally, large areas of forests are being cut down every day for various reasons. 
+Consequently, we are witnessing more droughts, floods, and unexpected seasonal changes.
 
-Therefore, this project aims to uncover the changes in the forest areas over the years in different Indian States.
+Therefore, this project aims to uncover the changes in forest areas over the years in different states of India.
 
 #### Resources Used - 
 
@@ -56,7 +57,7 @@ subpackage and thus we need to call the functions defined in the ForestCover as 
 Let us see the content within utils.py 
 
 We have created a function which loads the Forest data from the source folder to a pandas dataframe.
-```bash
+```python3
 
 def read_forest_data():
     forest_data = pd.read_excel('ForestData.xlsx')
@@ -68,7 +69,7 @@ The file content consists of some irregularities. Therefore we need to solve the
 defined in string format. Also, some values consists of "," if the number is in the format 20,000. To solve this issue we have
 created a small function which can be applied to a dataframe. 
 
-```bash
+```python3
 def remove_comma(value):
 
     try:
@@ -87,7 +88,7 @@ Below code does following things
 the change in forest area from the year 2003 to 2011.
 5. Next we can check the percentage change by dividing the difference value with the comparision year value)
 6. Later we can plot it using matplot lib.
-  ```bash
+  ```python3
   def get_graph_forest_data(forest_data, year_data):
 
     shp_gdf = gpd.read_file('ForestCover/India States/Indian_states.shp')
