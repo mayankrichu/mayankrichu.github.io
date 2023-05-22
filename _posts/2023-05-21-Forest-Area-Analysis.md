@@ -57,7 +57,7 @@ subpackage and thus we need to call the functions defined in the ForestCover as 
 Let us see the content within utils.py 
 
 We have created a function which loads the Forest data from the source folder to a pandas dataframe.
-```python3
+```bash
 
 def read_forest_data():
     forest_data = pd.read_excel('ForestData.xlsx')
@@ -69,7 +69,7 @@ The file content consists of some irregularities. Therefore we need to solve the
 defined in string format. Also, some values consists of "," if the number is in the format 20,000. To solve this issue we have
 created a small function which can be applied to a dataframe. 
 
-```python3
+```bash
 def remove_comma(value):
 
     try:
@@ -88,7 +88,7 @@ Below code does following things
 the change in forest area from the year 2003 to 2011.
 5. Next we can check the percentage change by dividing the difference value with the comparision year value)
 6. Later we can plot it using matplot lib.
-  ```python3
+  ```bash
   def get_graph_forest_data(forest_data, year_data):
 
     shp_gdf = gpd.read_file('ForestCover/India States/Indian_states.shp')
