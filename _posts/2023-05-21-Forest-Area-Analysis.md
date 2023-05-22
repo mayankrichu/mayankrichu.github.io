@@ -139,7 +139,7 @@ the change in forest area from the year 2003 to 2011.
 The final output we get is below Indian Map which shows the changes of the forest cover from the year 2003 to 2011.
 
 
-![Map.png](2023-05-22%2FMap.png)
+![My image Name](/assets/images/myimage.jpg)
 Change % in forest cover in India 2011 when compared with the year 2003
 
 
