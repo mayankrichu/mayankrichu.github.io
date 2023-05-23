@@ -1,5 +1,5 @@
 ---
-title: Gender changes in case of Accusative, Dative and Genetive
+title: Gender Variations in Accusative, Dative, and Genitive Cases
 author: mayank
 date: 2023-05-23 
 categories: [Blogging, Deutsch Lernen]
