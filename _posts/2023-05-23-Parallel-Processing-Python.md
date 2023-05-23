@@ -1,9 +1,9 @@
 ---
-title: Parallel Processing in python (ASYNCIO vs Parallel Processing) 
+title: Parallel Processing in python (ASYNCIO vs Python Multi Processing) 
 author: mayank 
 date: 2023-05-23
-categories: [Blogging, Python, Parallel Processing, Comparision]
-tags: [Parallel Processing, Asyncio, Concurrency]
+categories: [Blogging, Python, Parallel Processing, Comparison]
+tags: [Parallel Processing,Python Multiprocessing Asyncio, Concurrency]
 render_with_liquid: false
 ---
 
