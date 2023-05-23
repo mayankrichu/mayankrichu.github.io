@@ -3,7 +3,7 @@ title: Analysing forest area of Indian States
 author: mayank 
 date: 2023-05-23
 categories: [Blogging, Python, Parallel Processing, Comparision]
-tags: [Parallel Processing, Asyncio, Parallel Processing, Concurrency]
+tags: [Parallel Processing, Asyncio, Concurrency]
 render_with_liquid: false
 ---
 
