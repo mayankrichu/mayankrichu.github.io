@@ -10,16 +10,16 @@ render_with_liquid: false
 
 #### How can we implement concurrent functionalities in our programme?
 
-There are two simple techniques which we can use to implement parallel or concurrency.
+There are two simple techniques that can be used to implement parallelism or concurrency:
 
-1. Using Parellel processing 
-2. Using Syncio
 
-Both the approach is used slighly in different contexts.
+1. Parallel processing
+2. Asyncio
 
-Parallel processing involves a task to be divided in to small sub tasks and implements the tasks concurrently. On the other hand
-using Asyncio we can concurrently execute different tasks concurrently. 
+Both approaches are used slightly differently in various contexts.
 
-For example, if you have thousand of rows to process then you can use parallel processing to divide the rows into
-sub rows and parallelly process them. On the other hand lets suppose we have a problem where we need to retrieve
-information from two different sources concurrently, then we can fetch the data through APIs using syncio in a synchronous manner.
+Parallel processing involves dividing a task into smaller subtasks and executing them concurrently. 
+On the other hand, Asyncio allows for the concurrent execution of multiple tasks.
+
+For example, if you have thousands of rows to process, you can use parallel processing to divide the rows into subrows and process them in parallel. 
+On the other hand, if you need to retrieve information from two different sources concurrently, you can fetch the data through APIs using Asyncio in an asynchronous manner.
