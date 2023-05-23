@@ -106,7 +106,7 @@ the change in forest area from the year 2003 to 2011.
     vmax = merged['percentage_change'].max()
     vcenter = merged['percentage_change'].mean()
 
-    print(vmin, vmax, vcenter)
+    
     divnorm = colors.TwoSlopeNorm(vmin=vmin, vcenter=vcenter, vmax=vmax)
 
     k = 1600 
@@ -118,7 +118,7 @@ the change in forest area from the year 2003 to 2011.
 
     ax = merged.plot(column='percentage_change', cmap=cmap, scheme= 'Quantiles', k=k, ax=ax, edgecolor='0.8', legend=False)
 
-    print(merged.columns)
+
     for _, row in shp_gdf.iterrows():
         state_name = row['st_nm']
         centroid = row.geometry.centroid
