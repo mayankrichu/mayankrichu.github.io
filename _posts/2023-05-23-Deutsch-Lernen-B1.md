@@ -1,7 +1,7 @@
 ---
-title: Deutsch Learning Klassen der unregelmåßig Verben II
+title: Gender changes in case of Accusative, Dative and Genetive
 author: mayank
-date: 2023-05-20 4:11:00 
+date: 2023-05-23 
 categories: [Blogging, Deutsch Lernen]
 tags: [writing, Deutsch Learning, Genetiv, Accusativ, Nominativ, definite article, indefinite article]
 render_with_liquid: false
