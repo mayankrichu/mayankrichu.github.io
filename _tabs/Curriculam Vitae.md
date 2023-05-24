@@ -18,7 +18,7 @@ order: 4
 
 - Analyzed robotic spatial commands data using NLP python stack (NLTK, Spacy).
 - Automated and developed an annotation tool for spatial commands.
-- Project impact: Transformed the manual annotation task to automation which led to optimization of the process
+- Impact: Transformed the manual annotation task to automation which led to optimization of the process
 
 <h5>Human pose recognition and classification using machine learning on motion captured data</h5>
 
@@ -33,7 +33,7 @@ order: 4
 
 - Developed data pipeline and scheduled the process for scraping websites using python stack(Airflow)
 - Implemented parallel operations to process and handle large-scale text data.
-- Project impact: A fully automated scraping tool that yields clean text data for the ML pipeline.
+- Impact: A fully automated scraping tool that yields clean text data for the ML pipeline.
 
 
 #### Cognizant Technology Solution, Pune, Programmer Analyst | Nov 2015 - Dec 2018
