@@ -14,7 +14,7 @@ order: 4
 - Developed an ontology management web application using Flask, Pandas, REST APIs, SPARQL and Matplotlib
 - Impact: Shop-floor experts receive intelligent recommendations to improve manufacturing efficiency
 
- <h5>Annotation of robotic spatial commands </h5>
+- <h5>Annotation of robotic spatial commands </h5>
 
 - Analyzed robotic spatial commands data using NLP python stack (NLTK, Spacy).
 - Automated and developed an annotation tool for spatial commands.
