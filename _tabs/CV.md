@@ -20,7 +20,7 @@ Created data workflows to synchronize real-world manufacturing processes with th
 
 - Analyzed robotic spatial commands data using NLP python stack (NLTK, Spacy).
 - Automated and developed an annotation tool for spatial commands.
-- Project impact: Transformed the manual work to automation which led to optimization of the process
+- Project impact: Transformed the manual annotation task to automation which led to optimization of the process
 
 Human pose recognition and classification using machine learning on motion captured data</>
 
