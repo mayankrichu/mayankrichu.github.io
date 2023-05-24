@@ -33,9 +33,11 @@ order: 4
 
 <h5>Designed and developed a web scraping crawler for a technology scouting search enginen</h5>
 
+
 - Developed data pipeline and scheduled the process for scraping websites using python stack(Airflow)
 - Implemented parallel operations to process and handle large-scale text data.
 - Project impact: A fully automated scraping tool that yields clean text data for the ML pipeline.
+
 
 #### Cognizant Technology Solution, Pune, Programmer Analyst | Nov 2015 - Dec 2018
 
