@@ -76,7 +76,7 @@ programming, Software Testing.
 
 #### Area of Interests
 
-My preferred area of interests includes working with Climatological data, spatial data, NLP.
+My preferred area of interest includes working with Climatological data, Spatial data, NLP.
 
 
 
