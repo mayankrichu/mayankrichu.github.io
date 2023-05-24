@@ -31,24 +31,7 @@ I have done my Bachelors in Computer Science and Engineering from Galgotias Univ
 
 #### Tables
 
-
-| Area                                | Excellent knowledge                                                   | Average Knowledge                | 
-|:------------------------------------|:----------------------------------------------------------------------|----------------------------------|
-| CI/CD   Tool                        | GitHub Actions, Docker                                                | Kubernetes                       |
-| Language (Programming and Querying) | Python, SQL, SPARQL, Cypher Query                                     | Java, C                          |
-| Tools                               | SQLite, Neo4j, MongoDB, DynamoDB, Pycharm, Jupyter notebook, Overleaf |                                  |
-| Frontened Development               | HTML                                                                  | JavaScript, CSS                  |
-| Visualization Tool/Packages         | matplotlib, PowerBI                                                   | Tableau                          |
-| Python Packages                     | Pandas, numpy, matplotlib, Owlready2, Regular Expression, Flask       | Pytorch, scipy, sklearn, Pyspark |
-| Cloud Platform Technologies         | Azure app services, Azure Synapse Analytics, S3                       | Lambda, Google App engine        |
-| Scheduling Tool                     | Unix CRUD operation, Apache Airflow                                   |                                  |
-
-
-
-
-#### Area of Interests
-
-My preferred area of interests includes working with Climatological data and spatial data. 
+ 
 
 
 
