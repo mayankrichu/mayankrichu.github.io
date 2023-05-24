@@ -10,19 +10,17 @@ order: 4
 
 <h5>Damoklez - An intelligent recommendation system based on application-specific ontology (Master Thesis)/Publication</h5>
 
-Created data workflows to synchronize real-world manufacturing processes with their simulation model
-
-- reated data workflows to synchronize real-world manufacturing processes with their simulation model
+- Created data workflows to synchronize real-world manufacturing processes with their simulation model
 - Developed an ontology management web application using Flask, Pandas, REST APIs, SPARQL and Matplotlib
 - Impact: Shop-floor experts receive intelligent recommendations to improve manufacturing efficiency
 
- Annotation of robotic spatial commands 
+ <h5>Annotation of robotic spatial commands </h5>
 
 - Analyzed robotic spatial commands data using NLP python stack (NLTK, Spacy).
 - Automated and developed an annotation tool for spatial commands.
 - Project impact: Transformed the manual annotation task to automation which led to optimization of the process
 
-Human pose recognition and classification using machine learning on motion captured data</>
+<h5>Human pose recognition and classification using machine learning on motion captured data</h5>
 
 - Analyzed large-scale human pose datasets using ML python stack (PyTorch, Pandas and Numpy)
 - Prepared new datasets using OpenCV & MediaPipe for the ML model for the classification of human poses
