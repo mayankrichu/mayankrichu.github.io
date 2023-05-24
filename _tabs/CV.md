@@ -31,8 +31,7 @@ Human pose recognition and classification using machine learning on motion captu
 
 #### Rokin Tech, Munich, Data Engineering Intern | Dec 2020 – Mar 2021
 
-<h5>Designed and developed a web scraping crawler for a technology scouting search enginen</h5>
-
+<h5>Designed and developed a web scraping crawler for a technology scouting search engine </h5>
 
 - Developed data pipeline and scheduled the process for scraping websites using python stack(Airflow)
 - Implemented parallel operations to process and handle large-scale text data.
