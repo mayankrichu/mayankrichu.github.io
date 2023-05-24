@@ -14,7 +14,7 @@ Created data workflows to synchronize real-world manufacturing processes with th
 
 - reated data workflows to synchronize real-world manufacturing processes with their simulation model
 - Developed an ontology management web application using Flask, Pandas, REST APIs, SPARQL and Matplotlib
-- Project impact: Shop-floor experts recei<ve intelligent recommendations to improve manufacturing efficiency
+- Impact: Shop-floor experts receive intelligent recommendations to improve manufacturing efficiency
 
  Annotation of robotic spatial commands 
 
@@ -58,7 +58,7 @@ programming, Software Testing.
 
 ### Publications 
 
-#### Ontology-based Synchronization of Automated Production Systems and Their Simulation Models  - 2022 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM) [DOI: 10.1109/IEEM55944.2022.9989593]()
+Ontology-based Synchronization of Automated Production Systems and Their Simulation Models  - 2022 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM) [DOI: 10.1109/IEEM55944.2022.9989593]()
 
 
 | Area                                | Excellent knowledge                                                   | Average Knowledge                | 
