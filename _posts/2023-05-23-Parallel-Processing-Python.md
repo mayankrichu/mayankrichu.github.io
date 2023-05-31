@@ -19,7 +19,9 @@ There are two simple techniques that can be used to implement parallelism or con
 Both approaches are used slightly differently in various contexts.
 
 Parallel processing involves dividing a task into smaller subtasks and executing them concurrently. 
-On the other hand, Asyncio allows for the concurrent execution of multiple tasks.
+On the other hand, Asyncio allows for the concurrent execution of multiple tasks. Point to be noted is that 
+in reality Asyncio doesn't processes things in parallel but it is in concurrency which means the processes 
+gets process in overlapping time period but not necessarily happening at same time.
 
 For example, if you have thousands of rows to process, you can use parallel processing to divide the rows into subrows and process them in parallel. 
 On the other hand, if you need to retrieve information from two different sources concurrently, you can fetch the data through APIs using Asyncio in an asynchronous manner.
