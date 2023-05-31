@@ -21,7 +21,7 @@ elements and then forwards the results to the View component for display to the 
 
 Below is the sample pattern of the file structure which I usually use for my applications.
 
-
+```bash
 +++ProjectName 
    +++ ABC
        +++ utils.py
@@ -29,7 +29,7 @@ Below is the sample pattern of the file structure which I usually use for my app
    +++ templates
        +++ abc.html
    +++ run.py
-
+```
 
 In the above example ProjectName is the parent folder of the application. ABC is one of the folder to 
 define specifc Models and their controller. utils.py is used to define the model/logic of the program. Mostly,
