@@ -37,6 +37,6 @@ it consists of all the functions or classes which can be called by the routes.py
 should be clear that routes.py is a controller which consists of the links which redirects to a specific html define
 in the controller.
 
-In the templates folder, you can find the HTML content and CSS files that are called from the routes.py file.
+In the templates folder, I  usually put the HTML content and CSS files that are called from the routes.py file.
 
 The run.py file is the main Python file that includes calls to all the relevant models defined in the application.
