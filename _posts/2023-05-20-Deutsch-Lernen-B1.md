@@ -1,5 +1,5 @@
 ---
-title: Deutsch Learning Klassen der unregelmåßig Verben II
+title: Deutsch Learning Klassen der unregelmåßig Verben I
 author: mayank
 date: 2023-05-20 4:11:00 
 categories: [Blogging, Deutsch Lernen]
