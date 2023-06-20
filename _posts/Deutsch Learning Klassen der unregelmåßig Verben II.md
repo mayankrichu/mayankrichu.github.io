@@ -1,7 +1,7 @@
 ---
 title: Deutsch Learning Klassen der unregelmåßig Verben II
 author: mayank
-date: 2023-05-20 4:11:00 
+date: 2023-06-20 4:11:00 
 categories: [Blogging, Deutsch Lernen]
 tags: [writing, Deutsch Learning, Rules for Infinitiv Verb]
 render_with_liquid: false
