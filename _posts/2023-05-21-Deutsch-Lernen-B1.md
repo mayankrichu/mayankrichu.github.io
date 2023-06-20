@@ -61,32 +61,32 @@ example.
 
 
 
-| Regular Verbs | Pråteritum |    Perfekt | English Meaning            |
-|:--------------|:-----------|-----------:|----------------------------|
-| antworten     | antwortete |  geantwort | to answer                  |
-| arbeiten      | arbeitete  | gearbeitet | to work                    |
-| beginnen      | hielt      |   gehalten | to hold                    |
-| bekommen      | schlief    | geschlafen | to sleep                   |
-| benutzen      | benutzte   |    benutzt | to use                     |
-| besuchen      | besucht    |    besucht | to see                     |
-| bezahlen      | bezahlt    |    bezahlt | to pay                     |
-| bleiben       | bliebt     |  geblieben | to stay                    |
-| brauchen      | brauchte   |  gebraucht | to need                    |
-| dauern        | dauerte    |    gedaurt | to last                    |
-| denken        | dachte     |    gedacht | to think                   |
-| entdecken     | entdeckte  |  entdecken | to discover                |
-| erfinden      | erfand     |   erfunden | to invent                  |
+| Regular Verbs | Pråteritum |    Perfekt | English Meaning           |
+|:--------------|:-----------|-----------:|---------------------------|
+| antworten     | antwortete |  geantwort | to answer                 |
+| arbeiten      | arbeitete  | gearbeitet | to work                   |
+| beginnen      | hielt      |   gehalten | to hold                   |
+| bekommen      | schlief    | geschlafen | to sleep                  |
+| benutzen      | benutzte   |    benutzt | to use                    |
+| besuchen      | besucht    |    besucht | to see                    |
+| bezahlen      | bezahlt    |    bezahlt | to pay                    |
+| bleiben       | bliebt     |  geblieben | to stay                   |
+| brauchen      | brauchte   |  gebraucht | to need                   |
+| dauern        | dauerte    |    gedaurt | to last                   |
+| denken        | dachte     |    gedacht | to think                  |
+| entdecken     | entdeckte  |  entdecken | to discover               |
+| erfinden      | erfand     |   erfunden | to invent                 |
 | ergånzen      | ergånzte   |    ergånzt | to complete/ to supplement |
-| erlauben      | erlaubte   |   erlaubte | to permit/ to allow        |
-| erzåhlen      | erzåhlt    |            | to tell                    |
-| essen         | åß         |            | to eat                     |
-| finden        | findet     |            | to find                    |
-| fischen       | fisechte   |   gefischt | to fish                    |
-| fliegen       | flog       |   geflogen | to fly                     |
-| fragen        | fragte     |    gefragt | to ask                     |
-| gehen         | ging       |   gegangen | to go                      |
-| gewinnen      | gewann     |   gewonnen | to win                     |
-| glauben       | glaubte    |   geglaubt | to believe/ think          |
+| erlauben      | erlaubte   |   erlaubte | to permit/ to allow       |
+| erzåhlen      | erzåhlt    |            | to tell                   |
+| essen         | åß         |            | to eat                    |
+| finden        | findet     |            | to find                   |
+| fischen       | fisechte   |   gefischt | to fish                   |
+| fliegen       | flog       |   geflogen | to fly                    |
+| fragen        | fragte     |    gefragt | to ask                    |
+| gehen         | ging       |   gegangen | to go                     |
+| gewinnen      | gewann     |   gewonnen | to win                    |
+| glauben       | glaubte    |   geglaubt | to believe/think          |
 
 
 List of verbs source - https://ielanguages.com/german-regular-verbs.html
