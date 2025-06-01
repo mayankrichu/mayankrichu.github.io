@@ -6,6 +6,8 @@
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    columns = Math.floor(canvas.width / fontSize);
+    drops = new Array(columns).fill(0);
   }
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas();
@@ -21,8 +23,8 @@
   ];
 
   const fontSize = 18;
-  const columns = Math.floor(canvas.width / fontSize);
-  const drops = new Array(columns).fill(0);
+  let columns = Math.floor(canvas.width / fontSize);
+  let drops = new Array(columns).fill(0);
 
   function draw() {
     // Slightly opaque black to fade old letters
