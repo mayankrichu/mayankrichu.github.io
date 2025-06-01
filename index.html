@@ -8,22 +8,30 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css?v=1.1">
 
-  <!-- Devanagari font for Hindi letters -->
+  <!-- Devanagari font for Hindi letters (used by matrix.js) -->
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
     rel="stylesheet"
   >
 </head>
 <body>
-  <!-- Full-screen Canvas for Matrix-style Hindi “rain” -->
+  <!-- 1) Canvas for Matrix‐style Hindi “rain” -->
   <canvas id="matrix"></canvas>
 
-  <!-- Semi-transparent overlay to dim the letters -->
+  <!-- 2) Semi‐transparent overlay to dim the letters -->
   <div class="overlay"></div>
 
-  <!-- Content Area: Sidebar + Main -->
+  <!-- 3) Bulb (simple glowing idea icon) -->
+  <div class="bulb-container">
+    <div class="bulb"></div>
+    <div class="bulb-glow"></div>
+  </div>
+
+  <!-- 4) Content Area: Sidebar + Main Content -->
   <div class="content-area">
-    <!-- Sidebar: Works Section -->
+
+    <!-- 4a) Sidebar: My Works -->
+    <!-- include sidebar.html -->
     <aside class="sidebar">
       <h2>My Works</h2>
       <ul>
@@ -35,19 +43,119 @@
       </ul>
     </aside>
 
-    <!-- Main Content: Header + Timeline -->
+    <!-- 4b) Main Content (v stacked vertically) -->
     <div class="main-content">
-      <!-- Header -->
+
+      <!-- 5) Header -->
+      <!-- include header.html -->
       <header>
         <h1>Mayank Singh</h1>
         <p>Data Engineer · AI Enthusiast</p>
       </header>
 
-      <!-- Timeline Section -->
+      <!-- 6) Skills & Technologies -->
+      <!-- include skills.html -->
+      <section class="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skill-list">
+          <div class="skill-item">
+            <img src="icons/python.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <img src="icons/azure.svg" alt="Azure" />
+            <span>Azure</span>
+          </div>
+          <div class="skill-item">
+            <img src="icons/databricks.svg" alt="Databricks" />
+            <span>Databricks</span>
+          </div>
+          <div class="skill-item">
+            <img src="icons/powerbi.svg" alt="Power BI" />
+            <span>Power BI</span>
+          </div>
+          <!-- …add any other skills here -->
+        </div>
+      </section>
+
+      <!-- 7) Certifications & Courses -->
+      <!-- include certifications.html -->
+      <section class="certifications">
+        <h2>Certifications & Courses</h2>
+        <ul>
+          <li><strong>Azure Data Engineer Associate</strong> — Microsoft (Issued: Apr 2024)</li>
+          <li><strong>Data Science Professional Certificate</strong> — IBM (Issued: Dec 2023)</li>
+          <li><strong>Full-Stack Web Development</strong> — Coursera (Issued: Jul 2022)</li>
+          <!-- …add more certificates here -->
+        </ul>
+      </section>
+
+      <!-- 8) Projects Gallery -->
+      <!-- include projects.html -->
+      <section class="projects-gallery">
+        <h2>Projects Gallery</h2>
+        <div class="project-cards">
+          <article class="project-card">
+            <img src="images/chatbot-thumb.png" alt="AI Chatbot" />
+            <h3>AI Chatbot</h3>
+            <p>Built an Azure OpenAI-driven chatbot for tool traceability.</p>
+            <div class="project-tech">
+              <img src="icons/python.svg" alt="Python" />
+              <img src="icons/azure.svg" alt="Azure" />
+              <!-- … -->
+            </div>
+            <a href="https://github.com/yourusername/project-one" class="btn" target="_blank">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <img src="images/recommender-thumb.png" alt="Recommendation System" />
+            <h3>Recommendation System</h3>
+            <p>Designed an ontology-based system that recommends real-time manufacturing optimizations.</p>
+            <div class="project-tech">
+              <img src="icons/flask.svg" alt="Flask" />
+              <img src="icons/pandas.svg" alt="Pandas" />
+              <!-- … -->
+            </div>
+            <a href="https://github.com/yourusername/project-two" class="btn" target="_blank">View on GitHub</a>
+          </article>
+          <!-- …additional project cards… -->
+        </div>
+      </section>
+
+      <!-- 9) Testimonials -->
+      <!-- include testimonials.html -->
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testi-container">
+          <blockquote>
+            <p>“Mayank’s data engineering expertise helped us launch our dashboard in record time. His attention to detail is unmatched.”</p>
+            <cite>— Jane Doe, Head of Analytics</cite>
+          </blockquote>
+          <blockquote>
+            <p>“His AI/ML solutions were both innovative and practical—our team saw an immediate increase in efficiency.”</p>
+            <cite>— John Smith, R&D Manager</cite>
+          </blockquote>
+          <!-- …more blockquotes… -->
+        </div>
+      </section>
+
+      <!-- 10) Contact -->
+      <!-- include contact.html -->
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out:</p>
+        <ul class="social-links">
+          <li><a href="mailto:m.singh@hufschmied.net">✉️ Email</a></li>
+          <li><a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a></li>
+          <!-- …other channels… -->
+        </ul>
+      </section>
+
+      <!-- 11) Timeline -->
+      <!-- include timeline.html -->
       <main>
         <section class="timeline">
-          <!-- Current Role -->
-          <div class="timeline-item">
+          <div class="timeline-item" data-type="work">
             <div class="timeline-date">Nov 2023 – Present</div>
             <div class="timeline-content">
               <h2>Data Engineer/Analyst</h2>
@@ -61,8 +169,7 @@
             </div>
           </div>
 
-          <!-- Previous Role -->
-          <div class="timeline-item">
+          <div class="timeline-item" data-type="work">
             <div class="timeline-date">May 2021 – Mar 2023</div>
             <div class="timeline-content">
               <h2>Python Developer/Data Engineer (Working Student)</h2>
@@ -76,8 +183,7 @@
             </div>
           </div>
 
-          <!-- Early Role -->
-          <div class="timeline-item">
+          <div class="timeline-item" data-type="work">
             <div class="timeline-date">Nov 2015 – May 2018</div>
             <div class="timeline-content">
               <h2>Programmer Analyst</h2>
@@ -89,8 +195,7 @@
             </div>
           </div>
 
-          <!-- Education: M.Sc. -->
-          <div class="timeline-item">
+          <div class="timeline-item" data-type="education">
             <div class="timeline-date">2019 – 2023</div>
             <div class="timeline-content">
               <h2>M.Sc. in Web Science</h2>
@@ -99,8 +204,7 @@
             </div>
           </div>
 
-          <!-- Education: B.Tech. -->
-          <div class="timeline-item">
+          <div class="timeline-item" data-type="education">
             <div class="timeline-date">2011 – 2015</div>
             <div class="timeline-content">
               <h2>B.Tech. in Computer Science</h2>
@@ -111,67 +215,15 @@
         </section>
       </main>
 
-      <!-- Footer -->
+      <!-- 12) Footer -->
+      <!-- include footer.html -->
       <footer>
         <p>&copy; 2025 Mayank Singh. All rights reserved.</p>
       </footer>
     </div>
   </div>
 
-  <!-- Lightweight JavaScript for Matrix-style Hindi rain -->
-  <script>
-    (function() {
-      const canvas = document.getElementById('matrix');
-      const ctx = canvas.getContext('2d');
-
-      // Resize canvas to fill window
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
-      window.addEventListener('resize', resizeCanvas);
-      resizeCanvas();
-
-      // Hindi (Devanagari) characters to use
-      const hindiChars = [
-        'अ','आ','इ','ई','उ','ऊ',
-        'ए','ऐ','ओ','औ','क','ख',
-        'ग','घ','ङ','च','छ','ज',
-        'झ','ञ','ट','ठ','ड','ढ',
-        'ण','त','थ','द','ध','न',
-        'प','फ','ब','भ','म','य',
-        'र','ल','व','श','ष','स','ह'
-      ];
-
-      const fontSize = 18;
-      const columns = Math.floor(canvas.width / fontSize);
-      const drops = new Array(columns).fill(0);
-
-      function draw() {
-        // Slightly opaque black to fade out old letters
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        ctx.font = fontSize + 'px "Noto Sans Devanagari", sans-serif';
-        ctx.fillStyle = '#FFF';
-
-        for (let i = 0; i < columns; i++) {
-          const text = hindiChars[Math.floor(Math.random() * hindiChars.length)];
-          const x = i * fontSize;
-          const y = drops[i] * fontSize;
-
-          ctx.fillText(text, x, y);
-
-          if (y > canvas.height || Math.random() > 0.975) {
-            drops[i] = 0;
-          } else {
-            drops[i]++;
-          }
-        }
-      }
-
-      setInterval(draw, 50);
-    })();
-  </script>
+  <!-- Matrix JavaScript -->
+  <script src="matrix.js"></script>
 </body>
 </html>
