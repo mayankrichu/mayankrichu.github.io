@@ -143,6 +143,31 @@ body {
 }
 
 /*───────────────────────────────────────────────
+  Sidebar Profile Photo
+───────────────────────────────────────────────*/
+.profile-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 100px;               /* Adjust as desired */
+  height: 100px;              /* Keep square for a perfect circle */
+  object-fit: cover;          /* Crop/scale to fill */
+  border-radius: 50%;         /* Circle shape */
+  border: 2px solid #444;     /* Subtle border matching sidebar */
+}
+
+.profile-name {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+
+/*───────────────────────────────────────────────
   Main Content (Header, Sections, Timeline, Footer)
 ───────────────────────────────────────────────*/
 .main-content {
@@ -534,26 +559,5 @@ footer {
   }
 }
 
-/*───────────────────────────────────────────────
-  Sidebar Profile Photo
-───────────────────────────────────────────────*/
-.profile-container {
-  text-align: center;
-  margin-bottom: 1rem;
-}
 
-.profile-pic {
-  width: 100px;               /* Adjust as desired */
-  height: 100px;              /* Keep square for a perfect circle */
-  object-fit: cover;          /* Crop/scale to fill */
-  border-radius: 50%;         /* Circle shape */
-  border: 2px solid #444;     /* Subtle border matching sidebar */
-}
-
-.profile-name {
-  margin-top: 0.5rem;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-}
 
