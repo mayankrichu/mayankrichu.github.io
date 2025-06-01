@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mayank Singh — Portfolio</title>
 
-  <!-- Link to main stylesheet -->
-  <link rel="stylesheet" href="style.css?v=1.0">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css?v=1.1">
 
   <!-- Devanagari font for Hindi letters -->
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
     rel="stylesheet"
-  />
+  >
 </head>
 <body>
-  <!-- Full‐screen Canvas for Matrix‐style Hindi “rain” -->
+  <!-- Full-screen Canvas for Matrix-style Hindi “rain” -->
   <canvas id="matrix"></canvas>
+
+  <!-- Semi-transparent overlay to dim the letters -->
+  <div class="overlay"></div>
 
   <!-- Content Area: Sidebar + Main -->
   <div class="content-area">
@@ -115,13 +118,13 @@
     </div>
   </div>
 
-  <!-- Lightweight JavaScript for Matrix‐style Hindi rain -->
+  <!-- Lightweight JavaScript for Matrix-style Hindi rain -->
   <script>
     (function() {
       const canvas = document.getElementById('matrix');
       const ctx = canvas.getContext('2d');
 
-      // Make canvas full‐screen
+      // Resize canvas to fill window
       function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -140,18 +143,17 @@
         'र','ल','व','श','ष','स','ह'
       ];
 
-      const fontSize = 18;                                  // Size of each character
-      const columns = Math.floor(canvas.width / fontSize);  // Number of columns
-      const drops = new Array(columns).fill(0);             // y‐position of each column
+      const fontSize = 18;
+      const columns = Math.floor(canvas.width / fontSize);
+      const drops = new Array(columns).fill(0);
 
-      // Draw one frame
       function draw() {
-        // Black background with slight opacity to fade out old characters
+        // Slightly opaque black to fade out old letters
         ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.font = fontSize + 'px "Noto Sans Devanagari", sans-serif';
-        ctx.fillStyle = '#FFF';  // White characters
+        ctx.fillStyle = '#FFF';
 
         for (let i = 0; i < columns; i++) {
           const text = hindiChars[Math.floor(Math.random() * hindiChars.length)];
@@ -160,17 +162,15 @@
 
           ctx.fillText(text, x, y);
 
-          // Move drop down by one
           if (y > canvas.height || Math.random() > 0.975) {
-            drops[i] = 0;  // Reset to top randomly
+            drops[i] = 0;
           } else {
             drops[i]++;
           }
         }
       }
 
-      // Loop the drawing
-      setInterval(draw, 50);  // ~20 frames per second
+      setInterval(draw, 50);
     })();
   </script>
 </body>
