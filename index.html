@@ -8,25 +8,17 @@
   <!-- Link to main stylesheet -->
   <link rel="stylesheet" href="style.css?v=1.0">
 
-  <!-- Devanagari font for Sanskrit syllables -->
+  <!-- Devanagari font for Hindi letters -->
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
     rel="stylesheet"
-  >
+  />
 </head>
 <body>
-  <!-- Chakra “Matrix” Animation (background) -->
-  <div class="chakra-animation">
-    <span class="chakra-symbol" data-column="1">लं</span>
-    <span class="chakra-symbol" data-column="2">वं</span>
-    <span class="chakra-symbol" data-column="3">रं</span>
-    <span class="chakra-symbol" data-column="4">यं</span>
-    <span class="chakra-symbol" data-column="5">हं</span>
-    <span class="chakra-symbol" data-column="6">ॐ</span>
-    <span class="chakra-symbol" data-column="7">ॐ</span>
-  </div>
+  <!-- Full‐screen Canvas for Matrix‐style Hindi “rain” -->
+  <canvas id="matrix"></canvas>
 
-  <!-- Main Layout: Sidebar + Content -->
+  <!-- Content Area: Sidebar + Main -->
   <div class="content-area">
     <!-- Sidebar: Works Section -->
     <aside class="sidebar">
@@ -36,7 +28,7 @@
         <li><a href="https://github.com/yourusername/project-two" target="_blank">Project Two: Recommendation System</a></li>
         <li><a href="https://github.com/yourusername/project-three" target="_blank">Project Three: Power BI Dashboard</a></li>
         <li><a href="https://github.com/yourusername/project-four" target="_blank">Project Four: Data Pipeline Automation</a></li>
-        <!-- Add more projects here -->
+        <!-- Add more links here -->
       </ul>
     </aside>
 
@@ -100,7 +92,7 @@
             <div class="timeline-content">
               <h2>M.Sc. in Web Science</h2>
               <p>University of Koblenz and Landau</p>
-              <p>Focus: Web & Data Systems · AI · Knowledge Graphs · Big Data</p>
+              <p>Focus: Web &amp; Data Systems · AI · Knowledge Graphs · Big Data</p>
             </div>
           </div>
 
@@ -123,23 +115,62 @@
     </div>
   </div>
 
-  <!-- Lightweight JavaScript for randomizing chakra symbols -->
+  <!-- Lightweight JavaScript for Matrix‐style Hindi rain -->
   <script>
     (function() {
-      // Chakra seed syllables
-      const chakraChars = ['लं','वं','रं','यं','हं','ॐ','ॐ'];
-      const symbols = document.querySelectorAll('.chakra-symbol');
-      // Change each symbol’s text every 2–4 seconds randomly
-      symbols.forEach(el => {
-        const change = () => {
-          const rand = chakraChars[Math.floor(Math.random() * chakraChars.length)];
-          el.textContent = rand;
-        };
-        // Initial random assignment
-        change();
-        // Random interval between 2000–4000 ms
-        setInterval(change, 2000 + Math.random() * 2000);
-      });
+      const canvas = document.getElementById('matrix');
+      const ctx = canvas.getContext('2d');
+
+      // Make canvas full‐screen
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      // Hindi (Devanagari) characters to use
+      const hindiChars = [
+        'अ','आ','इ','ई','उ','ऊ',
+        'ए','ऐ','ओ','औ','क','ख',
+        'ग','घ','ङ','च','छ','ज',
+        'झ','ञ','ट','ठ','ड','ढ',
+        'ण','त','थ','द','ध','न',
+        'प','फ','ब','भ','म','य',
+        'र','ल','व','श','ष','स','ह'
+      ];
+
+      const fontSize = 18;                                  // Size of each character
+      const columns = Math.floor(canvas.width / fontSize);  // Number of columns
+      const drops = new Array(columns).fill(0);             // y‐position of each column
+
+      // Draw one frame
+      function draw() {
+        // Black background with slight opacity to fade out old characters
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.font = fontSize + 'px "Noto Sans Devanagari", sans-serif';
+        ctx.fillStyle = '#FFF';  // White characters
+
+        for (let i = 0; i < columns; i++) {
+          const text = hindiChars[Math.floor(Math.random() * hindiChars.length)];
+          const x = i * fontSize;
+          const y = drops[i] * fontSize;
+
+          ctx.fillText(text, x, y);
+
+          // Move drop down by one
+          if (y > canvas.height || Math.random() > 0.975) {
+            drops[i] = 0;  // Reset to top randomly
+          } else {
+            drops[i]++;
+          }
+        }
+      }
+
+      // Loop the drawing
+      setInterval(draw, 50);  // ~20 frames per second
     })();
   </script>
 </body>
