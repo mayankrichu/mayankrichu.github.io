@@ -1,5 +1,5 @@
 /*───────────────────────────────────────────────
-  Base Styles
+  Base Styles & Gradient Background
 ───────────────────────────────────────────────*/
 * {
   margin: 0;
@@ -9,10 +9,10 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(-45deg, #020024, #090979, #00d4ff);
+  background: linear-gradient(-45deg, #FF8C00, #FF4500, #FFA500);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
-  color: #f1f1f1;
+  color: #fff;
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
@@ -115,8 +115,8 @@ body {
   height: 100%;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 255, 0, 0.05),
-    rgba(0, 255, 0, 0.05) 1px,
+    rgba(255, 165, 0, 0.05),
+    rgba(255, 165, 0, 0.05) 1px,
     transparent 1px,
     transparent 20px
   );
@@ -165,7 +165,7 @@ body {
   left: 50%;
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, rgba(255, 255, 0, 0.4) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,165,0,0.4) 0%, transparent 70%);
   border-radius: 50%;
   transform: translateX(-50%);
   animation: bulbGlow 2s ease-in-out infinite alternate;
@@ -181,7 +181,7 @@ body {
 ───────────────────────────────────────────────*/
 header {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #f1f1f1;
+  color: #fff;
   padding: 2rem 1rem;
   text-align: center;
   position: relative;
@@ -191,11 +191,55 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
+  text-shadow: 0 0 6px #FFA500;
 }
 
 header p {
   font-size: 1rem;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+/*───────────────────────────────────────────────
+  Works Section Styles
+───────────────────────────────────────────────*/
+.works {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #FFA500;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 2;
+}
+
+.works h2 {
+  color: #FFA500;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #FFA500;
+  text-align: center;
+}
+
+.works ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.works li {
+  margin-bottom: 0.75rem;
+}
+
+.works a {
+  color: #FFD580;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+
+.works a:hover {
+  text-shadow: 0 0 10px #FFD580;
 }
 
 /*───────────────────────────────────────────────
@@ -213,7 +257,7 @@ main {
   position: relative;
   margin: 2rem 0;
   padding-left: 50px;
-  border-left: 3px solid #00bcd4;
+  border-left: 3px solid #FFA500;
 }
 
 .timeline-item {
@@ -229,42 +273,44 @@ main {
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color: #00bcd4;
+  background-color: #FFA500;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.7);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 8px rgba(0, 188, 212, 0.6); }
-  50% { box-shadow: 0 0 16px rgba(0, 188, 212, 1); }
-  100% { box-shadow: 0 0 8px rgba(0, 188, 212, 0.6); }
+  0% { box-shadow: 0 0 8px rgba(255, 165, 0, 0.7); }
+  50% { box-shadow: 0 0 16px rgba(255, 165, 0, 1); }
+  100% { box-shadow: 0 0 8px rgba(255, 165, 0, 0.7); }
 }
 
 .timeline-date {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #00bcd4;
+  color: #FFA500;
   padding-left: 10px;
+  text-shadow: 0 0 4px #FFA500;
 }
 
 .timeline-content {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
 }
 
 .timeline-content h2 {
   margin-top: 0;
-  color: #f1f1f1;
+  color: #FFD580;
+  text-shadow: 0 0 6px #FFD580;
 }
 
 .timeline-content h3 {
   margin: 0.5rem 0;
   font-weight: normal;
-  color: #ccc;
+  color: #ddd;
 }
 
 .timeline-content ul {
@@ -277,12 +323,13 @@ main {
 }
 
 .timeline-content p a {
-  color: #00e5ff;
+  color: #FFD580;
   text-decoration: none;
+  transition: text-shadow 0.3s ease;
 }
 
 .timeline-content p a:hover {
-  text-decoration: underline;
+  text-shadow: 0 0 6px #FFD580;
 }
 
 /*───────────────────────────────────────────────
@@ -290,11 +337,12 @@ main {
 ───────────────────────────────────────────────*/
 footer {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #f1f1f1;
+  color: #fff;
   text-align: center;
   padding: 1rem;
   position: relative;
   z-index: 2;
+  text-shadow: 0 0 4px #FFA500;
 }
 
 /*───────────────────────────────────────────────
