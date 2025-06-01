@@ -2,104 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayank Singh | Portfolio Timeline</title>
-  <link rel="stylesheet" href="style.css?v=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mayank Singh — Portfolio Timeline</title>
+
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Devanagari font for Sanskrit -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+    rel="stylesheet"
+  >
 </head>
 <body>
+  <!-- 7-Chakra “Matrix” Animation (background) -->
+  <div class="chakra-animation">
+    <span class="chakra-symbol">लं</span>
+    <span class="chakra-symbol">वं</span>
+    <span class="chakra-symbol">रं</span>
+    <span class="chakra-symbol">यं</span>
+    <span class="chakra-symbol">हं</span>
+    <span class="chakra-symbol">ॐ</span>
+    <span class="chakra-symbol">ॐ</span>
+  </div>
+
+  <!-- Algorithm/“Matrix” Green Lines Background -->
+  <div class="algorithm">
+    <div class="matrix"></div>
+  </div>
+
+  <!-- Bulb Animation (idea/innovation) -->
+  <div class="bulb-container">
+    <div class="bulb"></div>
+    <div class="bulb-glow"></div>
+  </div>
+
+  <!-- Main Header -->
   <header>
     <h1>Mayank Singh</h1>
-    <p>My Professional Timeline</p>
+    <p>Data Engineer&nbsp;&middot;&nbsp;AI Enthusiast</p>
   </header>
-  <!-- SVG Data Flow Animation -->
-<svg id="dataFlowAnimation" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <path class="flow" d="M0,50 C25,40 75,60 100,50" />
-  <path class="flow" d="M0,60 C25,50 75,70 100,60" />
-</svg>
-  <!-- AI/ML Dots -->
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
 
+  <!-- Main Content: Timeline -->
   <main>
     <section class="timeline">
-      <!-- Work Experience -->
+      <!-- Current Role -->
       <div class="timeline-item">
-        <div class="timeline-date">Nov 2023 – Now</div>
+        <div class="timeline-date">Nov 2023 – Present</div>
         <div class="timeline-content">
-          <h2>Hufschmied Zerspanungssysteme, Bobingen</h2>
-          <h3>Data Engineer/Analyst</h3>
+          <h2>Data Engineer/Analyst</h2>
+          <h3>Hufschmied Zerspanungssysteme, Bobingen</h3>
           <ul>
-            <li>Automated data workflows between different source systems and cloud platforms.</li>
-            <li>Designed and implemented end-to-end projects leveraging QR codes for tool traceability.</li>
-            <li>Developed dashboards to display real-time sensor data and calculated metrics from machines.</li>
-            <li>Collaborated with manufacturing, sales, and R&D teams to create data solutions.</li>
-            <li>Developed AIChatbot using Azure OpenAI and Azure CognitiveSearch.</li>
+            <li>Automated end-to-end data workflows across source systems and cloud.</li>
+            <li>Built real-time dashboards for machine sensor data and KPIs.</li>
+            <li>Developed an AI chatbot using Azure OpenAI & Cognitive Search.</li>
           </ul>
-          <p><strong>Skills:</strong> Python, PowerBI, Grafana, Databricks, Azure, Pyspark, OPCUA, Postgres, Azure CosmosDB, Linux</p>
+          <p><strong>Skills:</strong> Python · Power BI · Grafana · Databricks · Azure · PySpark · PostgreSQL · Linux</p>
         </div>
       </div>
 
+      <!-- Previous Role -->
       <div class="timeline-item">
         <div class="timeline-date">May 2021 – Mar 2023</div>
         <div class="timeline-content">
-          <h2>Fraunhofer IGCV, Augsburg</h2>
-          <h3>Working Student Python Developer/Data Engineer</h3>
-          <p><em>Damoklez - An intelligent recommendation system based on application-specific ontology (Master Thesis)/Publication</em></p>
+          <h2>Python Developer/Data Engineer (Working Student)</h2>
+          <h3>Fraunhofer IGCV, Augsburg</h3>
+          <p><em>Master’s Thesis & Publication: Damoklez – Intelligent Recommendation System</em></p>
           <ul>
-            <li>Created data workflows to synchronize real-world manufacturing processes with simulation models.</li>
-            <li>Developed an ontology management web application using Flask, Pandas, APIs, SPARQL & Matplotlib.</li>
-            <li>Improved manufacturing efficiency through real-time recommendations to shop-floor experts.</li>
+            <li>Synced real-world manufacturing processes with simulation models via automated pipelines.</li>
+            <li>Built an ontology management web app (Flask, Pandas, SPARQL, Matplotlib).</li>
+            <li>Published “Ontology-based Synchronization of Automated Production Systems” at IEEE IEEM 2022.</li>
           </ul>
         </div>
       </div>
 
+      <!-- Early Role -->
       <div class="timeline-item">
         <div class="timeline-date">Nov 2015 – May 2018</div>
         <div class="timeline-content">
-          <h2>Cognizant Technology Solutions, Pune</h2>
-          <h3>Programmer Analyst</h3>
+          <h2>Programmer Analyst</h2>
+          <h3>Cognizant Technology Solutions, Pune</h3>
           <ul>
-            <li>Understood and analyzed requirements for insurance applications.</li>
-            <li>Derived test scenarios and documented test cases for each sprint.</li>
-            <li>Ensured the quality and functionality of the application with backend validation.</li>
+            <li>Analyzed requirements and designed test cases for enterprise insurance applications.</li>
+            <li>Ensured application quality through backend validation and QA processes.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Publication -->
-      <div class="timeline-item">
-        <div class="timeline-date">2022</div>
-        <div class="timeline-content">
-          <h2>Publication</h2>
-          <p><strong>Ontology-based Synchronization of Automated Production Systems and Their Simulation Models</strong> - 2022 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)</p>
-          <p><a href="https://ieeexplore.ieee.org/document/9989593" target="_blank">Read Publication (DOI: 10.1109/IEEM55944.2022.9989593)</a></p>
-        </div>
-      </div>
-
-      <!-- Education -->
+      <!-- Education: M.Sc. -->
       <div class="timeline-item">
         <div class="timeline-date">2019 – 2023</div>
         <div class="timeline-content">
           <h2>M.Sc. in Web Science</h2>
           <p>University of Koblenz and Landau</p>
-          <p>Engineering Web and Data-Intensive Systems, Artificial Intelligence, Knowledge Graphs, Big Data.</p>
+          <p>Focus: Web‐and‐Data Systems · AI · Knowledge Graphs · Big Data</p>
         </div>
       </div>
 
+      <!-- Education: B.Tech. -->
       <div class="timeline-item">
         <div class="timeline-date">2011 – 2015</div>
         <div class="timeline-content">
           <h2>B.Tech. in Computer Science</h2>
           <p>Galgotias University</p>
-          <p>Computer programming, problem-solving, Data structures and algorithms, Database management systems, Web programming, Software Testing, Design Patterns.</p>
+          <p>Focus: Algorithms · DBMS · Web Programming · Software Testing</p>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mayank Singh. All rights reserved.</p>
   </footer>
