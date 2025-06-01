@@ -31,35 +31,31 @@
   <div class="content-area">
 
     <!-- 4a) Sidebar: My Works -->
-    <!-- include sidebar.html -->
     <aside class="sidebar">
-  <div class="profile-container">
-    <img src="773a9346c38b9dd3b1566774b7748dc08bc7605ab94982fc19d8745d04671867.jpg" alt="Mayank Singh" class="profile-pic">
-    <p class="profile-name">Mayank Singh</p>
-  </div>
+      <div class="profile-container">
+        <img src="773a9346c38b9dd3b1566774b7748dc08bc7605ab94982fc19d8745d04671867.jpg" alt="Mayank Singh" class="profile-pic">
+        <p class="profile-name">Mayank Singh</p>
+      </div>
 
-  <h2>My Works</h2>
-  <ul>
-    <li><a href="https://github.com/yourusername/project-one" target="_blank">Project One: AI Chatbot</a></li>
-    <li><a href="https://github.com/yourusername/project-two" target="_blank">Project Two: Recommendation System</a></li>
-    <li><a href="https://github.com/yourusername/project-three" target="_blank">Project Three: Power BI Dashboard</a></li>
-    <li><a href="https://github.com/yourusername/project-four" target="_blank">Project Four: Data Pipeline Automation</a></li>
-    <!-- Add more links here -->
-  </ul>
-</aside>
-    <!-- 4b) Main Content (v stacked vertically) -->
+      <h2>My Works</h2>
+      <ul>
+        <li><a href="https://github.com/yourusername/project-one" target="_blank">Project One: AI Chatbot</a></li>
+        <li><a href="https://github.com/yourusername/project-two" target="_blank">Project Two: Recommendation System</a></li>
+        <li><a href="https://github.com/yourusername/project-three" target="_blank">Project Three: Power BI Dashboard</a></li>
+        <li><a href="https://github.com/yourusername/project-four" target="_blank">Project Four: Data Pipeline Automation</a></li>
+      </ul>
+    </aside>
+
+    <!-- 4b) Main Content -->
     <div class="main-content">
 
       <!-- 5) Header -->
-      <!-- include header.html -->
       <header>
         <h1>Mayank Singh</h1>
         <p>Data Engineer · AI Enthusiast</p>
       </header>
 
-
-      <!-- 8) Projects Gallery -->
-      <!-- include projects.html -->
+      <!-- 6) Projects Gallery -->
       <section class="projects-gallery">
         <h2>Projects Gallery</h2>
         <div class="project-cards">
@@ -70,7 +66,6 @@
             <div class="project-tech">
               <img src="icons/python.svg" alt="Python" />
               <img src="icons/azure.svg" alt="Azure" />
-              <!-- … -->
             </div>
             <a href="https://github.com/yourusername/project-one" class="btn" target="_blank">View on GitHub</a>
           </article>
@@ -81,46 +76,14 @@
             <div class="project-tech">
               <img src="icons/flask.svg" alt="Flask" />
               <img src="icons/pandas.svg" alt="Pandas" />
-              <!-- … -->
             </div>
             <a href="https://github.com/yourusername/project-two" class="btn" target="_blank">View on GitHub</a>
           </article>
-          <!-- …additional project cards… -->
+          <!-- ...additional project cards... -->
         </div>
       </section>
 
-      <!-- 9) Testimonials -->
-      <!-- include testimonials.html -->
-      <section class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testi-container">
-          <blockquote>
-            <p>“Mayank’s data engineering expertise helped us launch our dashboard in record time. His attention to detail is unmatched.”</p>
-            <cite>— Jane Doe, Head of Analytics</cite>
-          </blockquote>
-          <blockquote>
-            <p>“His AI/ML solutions were both innovative and practical—our team saw an immediate increase in efficiency.”</p>
-            <cite>— John Smith, R&D Manager</cite>
-          </blockquote>
-          <!-- …more blockquotes… -->
-        </div>
-      </section>
-
-      <!-- 10) Contact -->
-      <!-- include contact.html -->
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out:</p>
-        <ul class="social-links">
-          <li><a href="mailto:m.singh@hufschmied.net">✉️ Email</a></li>
-          <li><a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a></li>
-          <li><a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a></li>
-          <!-- …other channels… -->
-        </ul>
-      </section>
-
-      <!-- 11) Timeline -->
-      <!-- include timeline.html -->
+      <!-- 7) Timeline -->
       <main>
         <section class="timeline">
           <div class="timeline-item" data-type="work">
@@ -136,7 +99,6 @@
               <p><strong>Skills:</strong> Python · Power BI · Grafana · Databricks · Azure · PySpark · PostgreSQL · Linux</p>
             </div>
           </div>
-
           <div class="timeline-item" data-type="work">
             <div class="timeline-date">May 2021 – Mar 2023</div>
             <div class="timeline-content">
@@ -150,7 +112,6 @@
               </ul>
             </div>
           </div>
-
           <div class="timeline-item" data-type="work">
             <div class="timeline-date">Nov 2015 – May 2018</div>
             <div class="timeline-content">
@@ -162,7 +123,6 @@
               </ul>
             </div>
           </div>
-
           <div class="timeline-item" data-type="education">
             <div class="timeline-date">2019 – 2023</div>
             <div class="timeline-content">
@@ -171,7 +131,6 @@
               <p>Focus: Web &amp; Data Systems · AI · Knowledge Graphs · Big Data</p>
             </div>
           </div>
-
           <div class="timeline-item" data-type="education">
             <div class="timeline-date">2011 – 2015</div>
             <div class="timeline-content">
@@ -183,8 +142,18 @@
         </section>
       </main>
 
-      <!-- 12) Footer -->
-      <!-- include footer.html -->
+      <!-- 8) Contact (moved to the bottom) -->
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out:</p>
+        <ul class="social-links">
+          <li><a href="mailto:m.singh@hufschmied.net">✉️ Email</a></li>
+          <li><a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a></li>
+        </ul>
+      </section>
+
+      <!-- 9) Footer -->
       <footer>
         <p>&copy; 2025 Mayank Singh. All rights reserved.</p>
       </footer>
