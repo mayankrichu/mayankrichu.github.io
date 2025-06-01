@@ -24,25 +24,33 @@
   const columns = Math.floor(canvas.width / fontSize);
   const drops = new Array(columns).fill(0);
 
+  // Introduce speed variation per column for rhythm
+  const speeds = new Array(columns).fill(0).map(() => Math.random() * 1.5 + 0.5);
+
   function draw() {
-    // Slightly opaque black to fade old letters
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    // Use lighter black to fade older letters faster
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.font = fontSize + 'px "Noto Sans Devanagari", sans-serif';
-    ctx.fillStyle = '#FFF';
+    ctx.fillStyle = '#b3e5fc'; // light cyan for a subtle, ethereal glow
 
     for (let i = 0; i < columns; i++) {
       const text = hindiChars[Math.floor(Math.random() * hindiChars.length)];
       const x = i * fontSize;
       const y = drops[i] * fontSize;
 
+      // Draw text with glow
+      ctx.shadowColor = '#b3e5fc';
+      ctx.shadowBlur = 4;
       ctx.fillText(text, x, y);
+      ctx.shadowBlur = 0; // reset
 
-      if (y > canvas.height || Math.random() > 0.975) {
+      // Reset drop to top randomly
+      if (y > canvas.height || Math.random() > 0.98) {
         drops[i] = 0;
       } else {
-        drops[i]++;
+        drops[i] += speeds[i]; // apply speed variation
       }
     }
   }
