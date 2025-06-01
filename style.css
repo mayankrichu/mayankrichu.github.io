@@ -1,5 +1,5 @@
 /*───────────────────────────────────────────────
-  Base Styles & Black‐and‐White Theme
+  Base Styles & Black Background
 ───────────────────────────────────────────────*/
 * {
   margin: 0;
@@ -9,82 +9,20 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #000;          /* Solid black background */
-  color: #fff;                     /* White text by default */
-  overflow-x: hidden;
+  background-color: #000;  /* Solid black behind the canvas */
+  color: #fff;             /* Default white text */
+  overflow: hidden;        /* Hide scrollbars for canvas */
   min-height: 100vh;
 }
 
-/*───────────────────────────────────────────────
-  Chakra “Matrix” Animation (background)
-───────────────────────────────────────────────*/
-.chakra-animation {
+/* Make sure the canvas covers entire viewport */
+#matrix {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.chakra-symbol {
-  position: absolute;
-  font-size: 1.8rem;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  opacity: 0.6;
-  color: #fff;              /* White chakra symbols */
-  animation: chakraFall 6s linear infinite;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
-}
-
-/* Position each chakra symbol in its own column and give random delays */
-.chakra-symbol[data-column="1"] {
-  left: 10%;
-  animation-delay: 0s;
-}
-.chakra-symbol[data-column="2"] {
-  left: 24%;
-  animation-delay: 1s;
-}
-.chakra-symbol[data-column="3"] {
-  left: 38%;
-  animation-delay: 2s;
-}
-.chakra-symbol[data-column="4"] {
-  left: 52%;
-  animation-delay: 1.5s;
-}
-.chakra-symbol[data-column="5"] {
-  left: 66%;
-  animation-delay: 2.5s;
-}
-.chakra-symbol[data-column="6"] {
-  left: 80%;
-  animation-delay: 3s;
-}
-.chakra-symbol[data-column="7"] {
-  left: 94%;
-  animation-delay: 1.2s;
-}
-
-/* Falling animation: from top → bottom, with slight rotation */
-@keyframes chakraFall {
-  0% {
-    top: -10%;
-    opacity: 0;
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translateY(50vh) rotate(180deg);
-  }
-  100% {
-    top: 110%;
-    opacity: 0;
-    transform: translateY(100vh) rotate(360deg);
-  }
+  z-index: 0; /* Behind all content */
 }
 
 /*───────────────────────────────────────────────
@@ -93,29 +31,28 @@ body {
 .content-area {
   display: flex;
   min-height: 100vh;
+  position: relative;
+  z-index: 1; /* Content sits above the canvas */
 }
 
 /* Sidebar (Works Section) */
 .sidebar {
   flex: 0 0 240px;
-  background-color: #111;         /* Very dark gray */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 1.5rem;
-  border-right: 2px solid #444;   /* Subtle gray border */
+  border-right: 2px solid #444;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.7);
-  position: relative;
-  z-index: 2;
 }
 
 .sidebar h2 {
   color: #fff;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .sidebar ul {
   list-style: none;
-  padding-left: 0;
 }
 
 .sidebar li {
@@ -126,12 +63,11 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .sidebar a:hover {
-  color: #aaa;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  color: #ccc;
 }
 
 /* Main Content (Header, Timeline, Footer) */
@@ -139,16 +75,14 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 1;
+  overflow-y: auto;
 }
 
 /*───────────────────────────────────────────────
   Header Styles
 ───────────────────────────────────────────────*/
 header {
-  background-color: #111;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -156,11 +90,13 @@ header {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 header p {
   font-size: 1rem;
   opacity: 0.8;
+  color: #ddd;
 }
 
 /*───────────────────────────────────────────────
@@ -168,7 +104,7 @@ header p {
 ───────────────────────────────────────────────*/
 main {
   flex: 1;
-  overflow-y: auto;
+  padding: 1rem;
 }
 
 .timeline {
@@ -176,7 +112,7 @@ main {
   margin: 2rem auto;
   padding-left: 50px;
   max-width: 700px;
-  border-left: 3px solid #fff;    /* White vertical line */
+  border-left: 3px solid #fff; /* White line */
 }
 
 .timeline-item {
@@ -192,7 +128,7 @@ main {
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color: #fff;       /* White circles */
+  background-color: #fff;              /* White circle */
   border-radius: 50%;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
   animation: pulse 2s infinite;
@@ -209,11 +145,10 @@ main {
   margin-bottom: 0.5rem;
   color: #fff;
   padding-left: 10px;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .timeline-content {
-  background-color: #222;       /* Dark gray block */
+  background-color: rgba(30, 30, 30, 0.9);
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
@@ -247,18 +182,17 @@ main {
 }
 
 .timeline-content p a:hover {
-  color: #aaa;
+  color: #ccc;
 }
 
 /*───────────────────────────────────────────────
   Footer Styles
 ───────────────────────────────────────────────*/
 footer {
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
   padding: 1rem;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 /*───────────────────────────────────────────────
@@ -268,7 +202,7 @@ footer {
   position: fixed;
   top: 10%;
   right: 5%;
-  z-index: 3;
+  z-index: 2;
 }
 
 .bulb {
@@ -277,7 +211,7 @@ footer {
   background: #333;
   border-radius: 14px 14px 4px 4px;
   position: relative;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
 }
 
 .bulb::before {
@@ -296,9 +230,9 @@ footer {
   position: absolute;
   top: -12px;
   left: 50%;
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
   border-radius: 50%;
   transform: translateX(-50%);
   animation: bulbGlow 2s ease-in-out infinite alternate;
