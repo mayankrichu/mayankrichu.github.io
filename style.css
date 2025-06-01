@@ -26,7 +26,7 @@ header p {
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -70,6 +70,22 @@ main {
 
 .timeline-content h2 {
   margin-top: 0;
+  color: #222;
+}
+
+.timeline-content h3 {
+  margin: 0.5rem 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
