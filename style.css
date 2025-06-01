@@ -151,12 +151,13 @@ body {
 }
 
 .profile-pic {
-  width: 100px;               /* Adjust as desired */
-  height: 100px;              /* Keep square for a perfect circle */
-  object-fit: cover;          /* Crop/scale to fill */
-  border-radius: 50%;         /* Circle shape */
-  border: 2px solid #444;     /* Subtle border matching sidebar */
+  width: 120px;              /* Adjusted size for better visibility */
+  height: 120px;             /* Square shape (equal width & height) */
+  object-fit: cover;         /* Crop/scale to fill */
+  border-radius: 8px;        /* Slightly rounded corners (optional) */
+  border: 2px solid #444;    /* Subtle border matching sidebar */
 }
+
 
 .profile-name {
   margin-top: 0.5rem;
