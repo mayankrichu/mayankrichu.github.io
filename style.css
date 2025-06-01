@@ -1,10 +1,10 @@
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(-45deg, #f9f9f9, #f0f0f0, #f9f9f9, #ffffff);
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
-  color: #333;
+  color: #f1f1f1;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Flowing gradient animation */
+/* Flowing gradient background animation */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -29,8 +29,8 @@ body::before {
   height: 100%;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(68, 68, 68, 0.05),
-    rgba(68, 68, 68, 0.05) 1px,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
     transparent 1px,
     transparent 20px
   );
@@ -46,8 +46,8 @@ body::before {
 
 /* Header fade-in animation */
 header {
-  background-color: #444;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
   padding: 2rem;
   text-align: center;
   animation: fadeIn 2s ease-in;
@@ -73,7 +73,7 @@ main {
   position: relative;
   margin: 2rem 0;
   padding-left: 50px;
-  border-left: 3px solid #444;
+  border-left: 3px solid #00bcd4;
 }
 
 .timeline-item {
@@ -89,34 +89,43 @@ main {
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color: #444;
+  background-color: #00bcd4;
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px rgba(0, 188, 212, 0.6); }
+  50% { box-shadow: 0 0 20px rgba(0, 188, 212, 1); }
+  100% { box-shadow: 0 0 10px rgba(0, 188, 212, 0.6); }
 }
 
 .timeline-date {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #444;
+  color: #00bcd4;
   padding-left: 10px;
 }
 
 .timeline-content {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   margin-left: 0;
+  backdrop-filter: blur(5px);
 }
 
 .timeline-content h2 {
   margin-top: 0;
-  color: #222;
+  color: #f1f1f1;
 }
 
 .timeline-content h3 {
   margin: 0.5rem 0;
   font-weight: normal;
-  color: #555;
+  color: #ccc;
 }
 
 .timeline-content ul {
@@ -129,7 +138,7 @@ main {
 }
 
 .timeline-content p a {
-  color: #0066cc;
+  color: #00e5ff;
   text-decoration: none;
 }
 
@@ -139,8 +148,8 @@ main {
 
 /* Footer */
 footer {
-  background-color: #444;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
   text-align: center;
   padding: 1rem;
   z-index: 2;
@@ -155,12 +164,11 @@ footer {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 1; /* Behind main content but above background lines */
+  z-index: 1;
 }
 
-/* Animate the dash offset to simulate flow */
 path.flow {
-  stroke: rgba(0, 102, 204, 0.2);
+  stroke: rgba(0, 229, 255, 0.3);
   stroke-width: 2;
   fill: none;
   stroke-dasharray: 10, 10;
@@ -171,6 +179,31 @@ path.flow {
   0% { stroke-dashoffset: 0; }
   100% { stroke-dashoffset: -20; }
 }
+
+/* AI/ML Dots Animation */
+@keyframes float {
+  0% { transform: translateY(0px); opacity: 0.8; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0px); opacity: 0.8; }
+}
+
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #00e5ff;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Place random dots (example positions) */
+.dot:nth-child(1) { left: 10%; top: 80%; animation-delay: 0s; }
+.dot:nth-child(2) { left: 30%; top: 60%; animation-delay: 1s; }
+.dot:nth-child(3) { left: 50%; top: 75%; animation-delay: 2s; }
+.dot:nth-child(4) { left: 70%; top: 65%; animation-delay: 3s; }
+.dot:nth-child(5) { left: 85%; top: 80%; animation-delay: 4s; }
 
 /* Responsive Design */
 @media (max-width: 600px) {
