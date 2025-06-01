@@ -11,6 +11,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #000;  /* Solid black */
   color: #fff;             /* White text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* subtle text shadow */
   overflow: auto;          /* Allow page to scroll */
   min-height: 100vh;
 }
@@ -39,7 +40,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-  pointer-events: none;     /* Allow clicks/scrolls through */
+  pointer-events: none;
 }
 
 /*───────────────────────────────────────────────
@@ -97,22 +98,22 @@ body {
   display: flex;
   min-height: 100vh;
   position: relative;
-  z-index: 2;  /* Content sits above overlay */
+  z-index: 2;
 }
 
 /*───────────────────────────────────────────────
-  Sidebar (“My Works”)
+  Sidebar
 ───────────────────────────────────────────────*/
 .sidebar {
   flex: 0 0 240px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
   border-right: 2px solid #444;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.7);
-  position: sticky;      /* Keep sidebar pinned */
+  position: sticky;
   top: 0;
   height: 100vh;
-  overflow-y: auto;      /* Allow sidebar to scroll if content overflows */
+  overflow-y: auto;
 }
 
 .sidebar h2 {
@@ -142,22 +143,18 @@ body {
   color: #ccc;
 }
 
-/*───────────────────────────────────────────────
-  Sidebar Profile Photo
-───────────────────────────────────────────────*/
 .profile-container {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .profile-pic {
-  width: 120px;              /* Adjusted size for better visibility */
-  height: 120px;             /* Square shape (equal width & height) */
-  object-fit: cover;         /* Crop/scale to fill */
-  border-radius: 8px;        /* Slightly rounded corners (optional) */
-  border: 2px solid #444;    /* Subtle border matching sidebar */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #444;
 }
-
 
 .profile-name {
   margin-top: 0.5rem;
@@ -166,31 +163,37 @@ body {
   font-size: 1rem;
 }
 
-
-
 /*───────────────────────────────────────────────
-  Main Content (Header, Sections, Timeline, Footer)
+  Main Content
 ───────────────────────────────────────────────*/
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;      /* Allow main content to scroll */
+  overflow-y: auto;
 }
 
 /*───────────────────────────────────────────────
-  Header (Page Title & Tagline)
+  Sections with Semi-Transparent Backgrounds
 ───────────────────────────────────────────────*/
-header {
-  background-color: rgba(0, 0, 0, 0.8);
+header,
+.skills,
+.certifications,
+.projects-gallery,
+.testimonials,
+.contact {
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 2rem 1rem;
+  margin: 1rem auto;
+}
+
+header {
   text-align: center;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #fff;
 }
 
 header p {
@@ -199,21 +202,20 @@ header p {
   color: #ddd;
 }
 
-/*───────────────────────────────────────────────
-  Skills & Technologies Section
-───────────────────────────────────────────────*/
-.skills {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.skills h2 {
+.skills h2,
+.certifications h2,
+.projects-gallery h2,
+.testimonials h2,
+.contact h2 {
   color: #fff;
   margin-bottom: 1rem;
   font-size: 1.8rem;
+  text-align: center;
 }
 
+/*───────────────────────────────────────────────
+  Skills Section
+───────────────────────────────────────────────*/
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +235,7 @@ header p {
 .skill-item img {
   width: 40px;
   margin-bottom: 0.5rem;
-  filter: invert(1); /* White‐colored icons */
+  filter: invert(1);
 }
 
 .skill-item span {
@@ -242,20 +244,8 @@ header p {
 }
 
 /*───────────────────────────────────────────────
-  Certifications & Courses Section
+  Certifications
 ───────────────────────────────────────────────*/
-.certifications {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem 1rem;
-}
-
-.certifications h2 {
-  color: #fff;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 1.8rem;
-}
-
 .certifications ul {
   list-style: none;
   max-width: 700px;
@@ -264,28 +254,15 @@ header p {
 
 .certifications li {
   padding: 0.75rem 1rem;
-  background-color: #222;
+  background-color: rgba(30, 30, 30, 0.6);
   margin-bottom: 0.5rem;
   border-radius: 4px;
   color: #ddd;
 }
 
 /*───────────────────────────────────────────────
-  Projects Gallery Section
+  Projects Gallery
 ───────────────────────────────────────────────*/
-.projects-gallery {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 2rem 1rem;
-  margin: 1rem auto;
-}
-
-.projects-gallery h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
 .project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -295,7 +272,7 @@ header p {
 }
 
 .project-card {
-  background-color: #111;
+  background-color: rgba(20, 20, 20, 0.6);
   border: 1px solid #444;
   border-radius: 6px;
   overflow: hidden;
@@ -315,16 +292,15 @@ header p {
 }
 
 .project-card h3 {
-  color: #fff;
   margin: 0.75rem 1rem 0.5rem;
   font-size: 1.2rem;
 }
 
 .project-card p {
-  color: #ccc;
   margin: 0 1rem 1rem;
   font-size: 0.9rem;
   flex-grow: 1;
+  color: #ccc;
 }
 
 .project-tech {
@@ -351,28 +327,15 @@ header p {
 }
 
 /*───────────────────────────────────────────────
-  Testimonials Section
+  Testimonials
 ───────────────────────────────────────────────*/
-.testimonials {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 2rem 1rem;
-  margin: 1rem auto;
-}
-
-.testimonials h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
 .testi-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
 blockquote {
-  background-color: #111;
+  background-color: rgba(20, 20, 20, 0.6);
   border-left: 4px solid #fff;
   padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -389,21 +352,8 @@ blockquote cite {
 }
 
 /*───────────────────────────────────────────────
-  Contact Section
+  Contact
 ───────────────────────────────────────────────*/
-.contact {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 2rem 1rem;
-  margin: 1rem auto;
-  text-align: center;
-}
-
-.contact h2 {
-  color: #fff;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
 .contact p {
   color: #ddd;
   margin-bottom: 1rem;
@@ -429,7 +379,7 @@ blockquote cite {
 }
 
 /*───────────────────────────────────────────────
-  Timeline Styles
+  Timeline
 ───────────────────────────────────────────────*/
 main {
   flex: 1;
@@ -441,7 +391,7 @@ main {
   margin: 2rem auto;
   padding-left: 50px;
   max-width: 700px;
-  border-left: 3px solid #fff; /* White line */
+  border-left: 3px solid #fff;
 }
 
 .timeline-item {
@@ -457,27 +407,26 @@ main {
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color: #fff;              /* White circle */
+  background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0%   { box-shadow: 0 0 6px rgba(255, 255, 255, 0.7); }
-  50%  { box-shadow: 0 0 12px rgba(255, 255, 255, 1); }
+  0% { box-shadow: 0 0 6px rgba(255, 255, 255, 0.7); }
+  50% { box-shadow: 0 0 12px rgba(255, 255, 255, 1); }
   100% { box-shadow: 0 0 6px rgba(255, 255, 255, 0.7); }
 }
 
 .timeline-date {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #fff;
   padding-left: 10px;
 }
 
 .timeline-content {
-  background-color: rgba(30, 30, 30, 0.9);
+  background-color: rgba(30, 30, 30, 0.6);
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
@@ -485,7 +434,6 @@ main {
 
 .timeline-content h2 {
   margin-top: 0;
-  color: #fff;
 }
 
 .timeline-content h3 {
@@ -515,10 +463,10 @@ main {
 }
 
 /*───────────────────────────────────────────────
-  Footer Styles
+  Footer
 ───────────────────────────────────────────────*/
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -559,6 +507,3 @@ footer {
     left: -7px;
   }
 }
-
-
-
