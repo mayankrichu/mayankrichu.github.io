@@ -1,285 +1,146 @@
-/*───────────────────────────────────────────────
-  Base Styles & Gradient Background
-───────────────────────────────────────────────*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mayank Singh — Portfolio</title>
 
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(-45deg, #FF8C00, #FF4500, #FFA500);
-  background-size: 400% 400%;
-  animation: gradientFlow 15s ease infinite;
-  color: #fff;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="style.css?v=1.0">
 
-@keyframes gradientFlow {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+  <!-- Devanagari font for Sanskrit syllables -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+    rel="stylesheet"
+  >
+</head>
+<body>
+  <!-- Chakra “Matrix” Animation (background) -->
+  <div class="chakra-animation">
+    <span class="chakra-symbol" data-column="1">लं</span>
+    <span class="chakra-symbol" data-column="2">वं</span>
+    <span class="chakra-symbol" data-column="3">रं</span>
+    <span class="chakra-symbol" data-column="4">यं</span>
+    <span class="chakra-symbol" data-column="5">हं</span>
+    <span class="chakra-symbol" data-column="6">ॐ</span>
+    <span class="chakra-symbol" data-column="7">ॐ</span>
+  </div>
 
-/*───────────────────────────────────────────────
-  Layout: Sidebar + Main Content
-───────────────────────────────────────────────*/
-.content-area {
-  display: flex;
-  min-height: 100vh;
-}
+  <!-- Main Layout: Sidebar + Content -->
+  <div class="content-area">
+    <!-- Sidebar: Works Section -->
+    <aside class="sidebar">
+      <h2>My Works</h2>
+      <ul>
+        <li><a href="https://github.com/yourusername/project-one" target="_blank">Project One: AI Chatbot</a></li>
+        <li><a href="https://github.com/yourusername/project-two" target="_blank">Project Two: Recommendation System</a></li>
+        <li><a href="https://github.com/yourusername/project-three" target="_blank">Project Three: Power BI Dashboard</a></li>
+        <li><a href="https://github.com/yourusername/project-four" target="_blank">Project Four: Data Pipeline Automation</a></li>
+        <!-- Add more projects here -->
+      </ul>
+    </aside>
 
-/* Sidebar (Works Section) */
-.sidebar {
-  flex: 0 0 250px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1.5rem;
-  border-right: 2px solid #FFD580;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 2;
-}
+    <!-- Main Content: Header + Timeline -->
+    <div class="main-content">
+      <!-- Header -->
+      <header>
+        <h1>Mayank Singh</h1>
+        <p>Data Engineer · AI Enthusiast</p>
+      </header>
 
-.sidebar h2 {
-  color: #FFA500;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-shadow: 0 0 6px #FFD580;
-  font-size: 1.5rem;
-}
+      <!-- Timeline Section -->
+      <main>
+        <section class="timeline">
+          <!-- Current Role -->
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2023 – Present</div>
+            <div class="timeline-content">
+              <h2>Data Engineer/Analyst</h2>
+              <h3>Hufschmied Zerspanungssysteme, Bobingen</h3>
+              <ul>
+                <li>Automated data workflows across source systems and cloud.</li>
+                <li>Built real-time dashboards for machine sensor data and KPIs.</li>
+                <li>Developed an AI chatbot using Azure OpenAI &amp; Cognitive Search.</li>
+              </ul>
+              <p><strong>Skills:</strong> Python · Power BI · Grafana · Databricks · Azure · PySpark · PostgreSQL · Linux</p>
+            </div>
+          </div>
 
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
+          <!-- Previous Role -->
+          <div class="timeline-item">
+            <div class="timeline-date">May 2021 – Mar 2023</div>
+            <div class="timeline-content">
+              <h2>Python Developer/Data Engineer (Working Student)</h2>
+              <h3>Fraunhofer IGCV, Augsburg</h3>
+              <p><em>Master’s Thesis &amp; Publication: Damoklez – Intelligent Recommendation System</em></p>
+              <ul>
+                <li>Synced real-world manufacturing processes with simulation models via pipelines.</li>
+                <li>Built an ontology web app (Flask, Pandas, SPARQL, Matplotlib).</li>
+                <li>Published “Ontology-based Synchronization of Automated Production Systems” at IEEE IEEM 2022.</li>
+              </ul>
+            </div>
+          </div>
 
-.sidebar li {
-  margin-bottom: 0.75rem;
-}
+          <!-- Early Role -->
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2015 – May 2018</div>
+            <div class="timeline-content">
+              <h2>Programmer Analyst</h2>
+              <h3>Cognizant Technology Solutions, Pune</h3>
+              <ul>
+                <li>Analyzed requirements and designed test cases for enterprise insurance software.</li>
+                <li>Ensured application quality via backend validation and QA processes.</li>
+              </ul>
+            </div>
+          </div>
 
-.sidebar a {
-  color: #FFD580;
-  text-decoration: none;
-  font-weight: bold;
-  transition: text-shadow 0.3s ease;
-}
+          <!-- Education: M.Sc. -->
+          <div class="timeline-item">
+            <div class="timeline-date">2019 – 2023</div>
+            <div class="timeline-content">
+              <h2>M.Sc. in Web Science</h2>
+              <p>University of Koblenz and Landau</p>
+              <p>Focus: Web & Data Systems · AI · Knowledge Graphs · Big Data</p>
+            </div>
+          </div>
 
-.sidebar a:hover {
-  text-shadow: 0 0 8px #FFD580;
-}
+          <!-- Education: B.Tech. -->
+          <div class="timeline-item">
+            <div class="timeline-date">2011 – 2015</div>
+            <div class="timeline-content">
+              <h2>B.Tech. in Computer Science</h2>
+              <p>Galgotias University</p>
+              <p>Focus: Algorithms · DBMS · Web Programming · Testing</p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-/* Main Content (Header, Timeline, Footer) */
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-}
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Mayank Singh. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
 
-/*───────────────────────────────────────────────
-  Header Styles
-───────────────────────────────────────────────*/
-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 6px #FFD580;
-}
-
-header p {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/*───────────────────────────────────────────────
-  Timeline Styles
-───────────────────────────────────────────────*/
-main {
-  flex: 1;
-  overflow-y: auto;
-}
-
-.timeline {
-  position: relative;
-  margin: 2rem auto;
-  padding-left: 50px;
-  max-width: 700px;
-  border-left: 3px solid #FFA500;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 20px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -7px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background-color: #FFA500;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(255, 165, 0, 0.7);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%   { box-shadow: 0 0 8px rgba(255, 165, 0, 0.7); }
-  50%  { box-shadow: 0 0 16px rgba(255, 165, 0, 1); }
-  100% { box-shadow: 0 0 8px rgba(255, 165, 0, 0.7); }
-}
-
-.timeline-date {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #FFA500;
-  padding-left: 10px;
-  text-shadow: 0 0 4px #FFD580;
-}
-
-.timeline-content {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-}
-
-.timeline-content h2 {
-  margin-top: 0;
-  color: #FFD580;
-  text-shadow: 0 0 6px #FFD580;
-}
-
-.timeline-content h3 {
-  margin: 0.5rem 0;
-  font-weight: normal;
-  color: #ddd;
-}
-
-.timeline-content ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.timeline-content li {
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content p a {
-  color: #FFD580;
-  text-decoration: none;
-  transition: text-shadow 0.3s ease;
-}
-
-.timeline-content p a:hover {
-  text-shadow: 0 0 6px #FFD580;
-}
-
-/*───────────────────────────────────────────────
-  Footer Styles
-───────────────────────────────────────────────*/
-footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  text-shadow: 0 0 4px #FFD580;
-}
-
-/*───────────────────────────────────────────────
-  Bulb Animation (idea/innovation)
-───────────────────────────────────────────────*/
-.bulb-container {
-  position: fixed;
-  top: 10%;
-  right: 5%;
-  z-index: 3;
-}
-
-.bulb {
-  width: 30px;
-  height: 45px;
-  background: #333;
-  border-radius: 15px 15px 5px 5px;
-  position: relative;
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.7);
-}
-
-.bulb::before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  background: #555;
-  transform: translateX(-50%);
-  border-radius: 50%;
-}
-
-.bulb-glow {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  background: radial-gradient(circle, rgba(255,165,0,0.4) 0%, transparent 70%);
-  border-radius: 50%;
-  transform: translateX(-50%);
-  animation: bulbGlow 2s ease-in-out infinite alternate;
-}
-
-@keyframes bulbGlow {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/*───────────────────────────────────────────────
-  Responsive Adjustments
-───────────────────────────────────────────────*/
-@media (max-width: 800px) {
-  .content-area {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    flex: 0 0 auto;
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid #FFD580;
-  }
-
-  .sidebar h2 {
-    text-align: center;
-  }
-
-  .main-content {
-    margin-top: 1rem;
-  }
-
-  .timeline {
-    padding-left: 30px;
-    border-left: 3px solid #FFA500;
-  }
-
-  .timeline-item {
-    padding-left: 10px;
-  }
-
-  .timeline-item::before {
-    left: -7px;
-  }
-}
+  <!-- Lightweight JavaScript for randomizing chakra symbols -->
+  <script>
+    (function() {
+      // Chakra seed syllables
+      const chakraChars = ['लं','वं','रं','यं','हं','ॐ','ॐ'];
+      const symbols = document.querySelectorAll('.chakra-symbol');
+      // Change each symbol’s text every 2–4 seconds randomly
+      symbols.forEach(el => {
+        const change = () => {
+          const rand = chakraChars[Math.floor(Math.random() * chakraChars.length)];
+          el.textContent = rand;
+        };
+        // Initial random assignment
+        change();
+        // Random interval between 2000–4000 ms
+        setInterval(change, 2000 + Math.random() * 2000);
+      });
+    })();
+  </script>
+</body>
+</html>
